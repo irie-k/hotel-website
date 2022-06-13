@@ -1,6 +1,15 @@
 /* @import url(reset.css); */
 
 /*------------------------------------*\
+  #CUSTOM-PROPS
+\*------------------------------------*/
+:root {
+  --clr-dark: #333;
+  --clr-light: #fff;
+  --clr-main: #f7c08a;
+}
+
+/*------------------------------------*\
   #RESET
 \*------------------------------------*/
 *,
@@ -37,19 +46,40 @@ p {
 /*------------------------------------*\
   #UTILITY-CLASSES
 \*------------------------------------*/
+.bg__dark {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.bg__light {
+  background-color: #f4f4f4;
+  color: var(--clr-dark);
+}
+
+.bg__primary {
+  background-color: var(--clr-dark);
+  color: var(--clr-main);
+}
+
 .btn {
   display: inline-block;
   font-size: 18px;
-  color: #fff;
-  background-color: #333;
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
   padding: 13px 20px;
   border: 0;
   cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn__light {
+  background-color: #f4f4f4;
+  color: var(--clr-dark);
 }
 
 .btn:hover {
-  background-color: #f7c08a;
-  color: #333;
+  background-color: var(--clr-main);
+  color: var(--clr-dark);
 }
 
 .container {
@@ -64,20 +94,20 @@ p {
 }
 
 .text__primary {
-  color: #f7c08a;
+  color: var(--clr-main);
 }
 
 /*------------------------------------*\
   #NAVBAR
 \*------------------------------------*/
 #navbar {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
   overflow: auto;
 }
 
 #navbar a {
-  color: #fff;
+  color: var(--clr-light);
 }
 
 #navbar h1 {
@@ -104,7 +134,7 @@ p {
 #navbar ul li a:hover,
 #navbar ul li a.current-page {
   background-color: #444;
-  color: #f7c08a;
+  color: var(--clr-main);
 }
 
 /*------------------------------------*\
@@ -116,7 +146,7 @@ p {
 }
 
 #showcase .showcase__content {
-  color: #fff;
+  color: var(--clr-light);
   text-align: center;
   padding-top: 170px;
 }
@@ -131,4 +161,31 @@ p {
 #showcase .showcase__content p {
   padding-bottom: 20px;
   line-height: 1.7em;
+}
+
+/*------------------------------------*\
+  #HOME-INFO
+\*------------------------------------*/
+#home-info {
+  height: 400px;
+}
+
+#home-info .info__img {
+  float: left;
+  width: 50%;
+  background: url(/img/photo-1.jpg) no-repeat;
+  min-height: 100%;
+}
+
+#home-info .info__content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info__content p {
+  padding-bottom: 30px;
 }
