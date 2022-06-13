@@ -1,0 +1,86 @@
+/* @import url(reset.css); */
+
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------*\
+  #BASE-STYLING
+\*------------------------------------*/
+html,
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/*------------------------------------*\
+  #UTILITY-CLASSES
+\*------------------------------------*/
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+/*------------------------------------*\
+  #NAVBAR
+\*------------------------------------*/
+#navbar {
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar h1 {
+  text-transform: uppercase;
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  text-transform: capitalize;
+  display: block;
+  padding: 20px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current-page {
+  background-color: #444;
+  color: #f7c08a;
+}
