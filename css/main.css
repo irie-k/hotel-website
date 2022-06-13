@@ -57,8 +57,8 @@ p {
 }
 
 .bg__primary {
-  background-color: var(--clr-dark);
-  color: var(--clr-main);
+  color: var(--clr-dark);
+  background-color: var(--clr-main);
 }
 
 .btn {
@@ -80,6 +80,10 @@ p {
 .btn:hover {
   background-color: var(--clr-main);
   color: var(--clr-dark);
+}
+
+.clr {
+  clear: both;
 }
 
 .container {
@@ -188,4 +192,24 @@ p {
 
 #home-info .info__content p {
   padding-bottom: 30px;
+}
+
+/*------------------------------------*\
+  #FEATURES
+\*------------------------------------*/
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+#page-footer {
+  text-align: center;
+  background-color: #444;
+  color: var(--clr-light);
+  padding: 10px;
 }
