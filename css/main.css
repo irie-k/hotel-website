@@ -97,6 +97,23 @@ p {
   font-size: 20px;
 }
 
+.l-heading {
+  font-size: 40px;
+}
+
+/* Padding */
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
+
 .text__primary {
   color: var(--clr-main);
 }
@@ -202,6 +219,36 @@ p {
   width: 33.3%;
   padding: 50px;
   text-align: center;
+}
+
+.box svg {
+  margin-bottom: 10px;
+}
+
+/*------------------------------------*\
+  #ABOUT-INFO
+\*------------------------------------*/
+#about-info .info__right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info__right img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#about-info .info__left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
 }
 
 /*------------------------------------*\
