@@ -25,8 +25,8 @@
 \*------------------------------------*/
 html,
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -57,19 +57,19 @@ p {
 }
 
 .bg__primary {
-  color: var(--clr-dark);
   background-color: var(--clr-main);
+  color: var(--clr-dark);
 }
 
 .btn {
   display: inline-block;
-  font-size: 18px;
-  color: var(--clr-light);
   background-color: var(--clr-dark);
-  padding: 13px 20px;
+  color: var(--clr-light);
   border: 0;
+  padding: 13px 20px;
   cursor: pointer;
   text-transform: capitalize;
+  font-size: 18px;
 }
 
 .btn__light {
@@ -87,9 +87,9 @@ p {
 }
 
 .container {
+  overflow: auto;
   margin: auto;
   max-width: 1100px;
-  overflow: auto;
   padding: 0 20px;
 }
 
@@ -132,9 +132,9 @@ p {
 }
 
 #navbar h1 {
-  text-transform: uppercase;
   float: left;
   padding-top: 20px;
+  text-transform: uppercase;
 }
 
 #navbar ul {
@@ -147,9 +147,9 @@ p {
 }
 
 #navbar ul li a {
-  text-transform: capitalize;
   display: block;
   padding: 20px;
+  text-transform: capitalize;
 }
 
 #navbar ul li a:hover,
@@ -168,14 +168,14 @@ p {
 
 #showcase .showcase__content {
   color: var(--clr-light);
-  text-align: center;
   padding-top: 170px;
+  text-align: center;
 }
 
 #showcase .showcase__content h1 {
-  font-size: 60px;
-  text-transform: capitalize;
   line-height: 1.2em;
+  text-transform: capitalize;
+  font-size: 60px;
   font-weight: 700;
 }
 
@@ -192,19 +192,19 @@ p {
 }
 
 #home-info .info__img {
-  float: left;
-  width: 50%;
   background: url(/img/photo-1.jpg) no-repeat;
+  float: left;
   min-height: 100%;
+  width: 50%;
 }
 
 #home-info .info__content {
   float: right;
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  padding: 50px 30px;
   overflow: hidden;
+  height: 100%;
+  width: 50%;
+  padding: 50px 30px;
+  text-align: center;
 }
 
 #home-info .info__content p {
@@ -230,12 +230,11 @@ p {
 \*------------------------------------*/
 #about-info .info__right {
   float: right;
-  width: 50%;
   min-height: 100%;
+  width: 50%;
 }
 
 #about-info .info__right img {
-  width: 70%;
   display: block;
   margin: auto;
   border-radius: 50%;
@@ -243,20 +242,58 @@ p {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  width: 70%;
 }
 
 #about-info .info__left {
   float: left;
-  width: 50%;
   min-height: 100%;
+  width: 50%;
+}
+
+/*------------------------------------*\
+  #TESTIMONIALS
+\*------------------------------------*/
+#testimonials {
+  background: url(/img/test-bg.jpg) no-repeat center center/cover;
+  height: 600px;
+  padding-top: 100px;
+}
+
+#testimonials h2 {
+  color: var(--clr-light);
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#testimonials .testimonial {
+  opacity: 90%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 20px;
+}
+
+#testimonials .testimonial img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 100px;
 }
 
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
 #page-footer {
-  text-align: center;
   background-color: #444;
   color: var(--clr-light);
   padding: 10px;
+  text-align: center;
 }
