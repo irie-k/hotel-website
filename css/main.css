@@ -43,6 +43,10 @@ p {
   margin: 10px 0;
 }
 
+textarea {
+  resize: none;
+}
+
 /*------------------------------------*\
   #UTILITY-CLASSES
 \*------------------------------------*/
@@ -286,6 +290,35 @@ p {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   width: 100px;
+}
+
+/*------------------------------------*\
+  #CONTACT-FORM
+\*------------------------------------*/
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 10px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--clr-main);
+  outline: none;
+}
+
+#contact-form textarea {
+  height: 200px;
 }
 
 /*------------------------------------*\
