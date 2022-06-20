@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #NAVBAR
+\*------------------------------------*/
+
 #navbar h1 {
   float: none;
   text-align: center;
@@ -11,6 +15,18 @@
 #navbar ul li a {
   border-bottom: 1px solid #444;
   padding: 5px;
+}
+
+/*------------------------------------*\
+  #SHOWCASE
+\*------------------------------------*/
+#showcase {
+  height: 100%;
+}
+
+#showcase .showcase__content {
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
 
 /*------------------------------------*\
@@ -31,4 +47,28 @@
 .box {
   float: none;
   width: 100%;
+}
+
+/*------------------------------------*\
+  #ABOUT
+\*------------------------------------*/
+#about-info .info__right,
+#about-info .info__left {
+  float: none;
+  width: 100%;
+}
+
+#about-info .info__right {
+  margin-top: 30px;
+}
+
+.l-heading {
+  text-align: center;
+}
+
+/*------------------------------------*\
+  #CONTACT
+\*------------------------------------*/
+#contact-info .box {
+  border-bottom: 1px solid #444;
 }
